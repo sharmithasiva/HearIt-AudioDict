@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the body take up the full viewport height */
+    background-image: url('../static/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 56px; /* Adjust this value if your navbar height is different */
+}
+
+.container {
+    max-width: 600px;
+    width: 100%; /* Ensure the container doesn't exceed the max-width */
+    /* background-color: seashell; */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text inside the container */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Add hover effect */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Add margin to separate heading from input */
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin at the bottom */
+    border: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    flex: 1;
+    margin-right: 10px; /* Add margin between input and button */
+}
+
+.search-button {
+    padding: 7px 20px;
+    font-size: 16px;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 0px;
+}
+
+.search-button:hover {
+    background-color: burlywood;
+}
+
+.voice-search-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform for animation */
+    margin-top: 10px; /* Add margin at the top of the voice search button */
+}
+
+.voice-search-button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Add scale effect on hover */
+}
+
+.voice-search-button i {
+    margin-right: 8px; /* Add some space between the icon and the text */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Flash message styles */
+.flash-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.flash-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.flash-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
